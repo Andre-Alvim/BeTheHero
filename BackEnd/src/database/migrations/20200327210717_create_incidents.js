@@ -1,14 +1,14 @@
 exports.up = function(knex) {
   knex.schema.createTable("incidents", function(tabble) {
-    table.increments();
+    tabble.increments();
 
-    table.string("titulo").notNullable();
-    table.string("description").notNullable();
-    table.decimal("value").notNullable();
+    tabble.string("titulo").notNullable();
+    tabble.string("description").notNullable();
+    tabble.decimal("value").notNullable();
 
     // Relacionando
-    table.string("ong_id").notNullable();
-    table
+    tabble.string("ong_id").notNullable();
+    tabble
       .foreign("ong_id")
       .references("id")
       .inTable("ongs");

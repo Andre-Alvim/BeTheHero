@@ -1,11 +1,11 @@
 exports.up = function(knex) {
   knex.schema.createTable("ongs", function(tabble) {
-    table.string("id").primary();
-    table.string("name").notNullable();
-    table.string("email").notNullable();
-    table.string("whatsapp").notNullable();
-    table.string("city").notNullable();
-    table.string("uf", 2).notNullable();
+    tabble.string("id").primary();
+    tabble.string("name").notNullable();
+    tabble.string("email").notNullable();
+    tabble.string("whatsapp").notNullable();
+    tabble.string("city").notNullable();
+    tabble.string("uf", 2).notNullable();
   });
 };
 
